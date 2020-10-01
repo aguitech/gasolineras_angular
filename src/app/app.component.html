@@ -1,0 +1,35 @@
+<h1>Gasolineras</h1>
+<input type="text" [(ngModel)]="buscar" (keyup)="getLocations($event)" />
+<div class="pinboard">
+  <agm-map [latitude]="19.47119" [longitude]="-99.1657">
+  <agm-marker [latitude]="resultado.latitude" [longitude]="resultado.longitude" *ngFor="let resultado of resultados"></agm-marker>
+  </agm-map>
+</div>
+
+
+<table>
+  <tr>
+    <td>calle</td>
+    <td>regular</td>
+    <td>premium</td>
+    <td>latitude</td>
+    <td>longitude</td>
+    <td>codigopostal</td>
+    <td>colonia</td>
+    <td>delegacion</td>
+    <td>estado</td>
+  </tr>
+  <tr *ngFor="let resultado of resultados">
+    <td>{{ resultado.calle }}</td>
+    <td>{{ resultado.regular }}</td>
+    <td>{{ resultado.premium }}</td>
+    <td>{{ resultado.latitude }}</td>
+    <td>{{ resultado.longitude }}</td>
+    <td>{{ resultado.codigopostal }}</td>
+    <td>{{ resultado.colonia }}</td>
+    <td>{{ resultado.delegacion }}</td>
+    <td>{{ resultado.estado }}</td>    
+  </tr>
+</table>
+
+
