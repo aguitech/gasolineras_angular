@@ -1,5 +1,9 @@
 <h1>Gasolineras</h1>
-<input type="text" [(ngModel)]="buscar" (keyup)="getLocations($event)" />
+<div class="contenedor_busqueda">Contamos con b&uacute;squeda por calle, colonia, delegaci&oacute;n o municipio, estado, c&oacute;digo postal, precio de la gasolina regular y premium.</div>
+<div class="contenedor_busqueda">
+  <input class="search_input" type="text" [(ngModel)]="buscar" (keyup)="getLocations($event)" />
+  <i class="material-icons search_icon">search_icon</i>
+</div>
 <div class="pinboard">
   <agm-map [latitude]="19.47119" [longitude]="-99.1657">
   <agm-marker [latitude]="resultado.latitude" [longitude]="resultado.longitude" *ngFor="let resultado of resultados"></agm-marker>
@@ -7,28 +11,28 @@
 </div>
 
 
-<table>
-  <tr>
-    <td>calle</td>
-    <td>regular</td>
-    <td>premium</td>
-    <td>latitude</td>
-    <td>longitude</td>
-    <td>codigopostal</td>
-    <td>colonia</td>
-    <td>delegacion</td>
-    <td>estado</td>
+<table class="table_dinamic">
+  <tr class="tr_dinamic">
+    <td class="td_dinamic">calle</td>
+    <td class="td_dinamic">regular</td>
+    <td class="td_dinamic">premium</td>
+    <td class="td_dinamic">latitude</td>
+    <td class="td_dinamic">longitude</td>
+    <td class="td_dinamic">codigopostal</td>
+    <td class="td_dinamic">colonia</td>
+    <td class="td_dinamic">delegacion</td>
+    <td class="td_dinamic">estado</td>
   </tr>
-  <tr *ngFor="let resultado of resultados">
-    <td>{{ resultado.calle }}</td>
-    <td>{{ resultado.regular }}</td>
-    <td>{{ resultado.premium }}</td>
-    <td>{{ resultado.latitude }}</td>
-    <td>{{ resultado.longitude }}</td>
-    <td>{{ resultado.codigopostal }}</td>
-    <td>{{ resultado.colonia }}</td>
-    <td>{{ resultado.delegacion }}</td>
-    <td>{{ resultado.estado }}</td>    
+  <tr  lass="tr_dinamic" *ngFor="let resultado of resultados">
+    <td class="td_dinamic">{{ resultado.calle }}</td>
+    <td class="td_dinamic">{{ resultado.regular }}</td>
+    <td class="td_dinamic">{{ resultado.premium }}</td>
+    <td class="td_dinamic">{{ resultado.latitude }}</td>
+    <td class="td_dinamic">{{ resultado.longitude }}</td>
+    <td class="td_dinamic">{{ resultado.codigopostal }}</td>
+    <td class="td_dinamic">{{ resultado.colonia }}</td>
+    <td class="td_dinamic">{{ resultado.delegacion }}</td>
+    <td class="td_dinamic">{{ resultado.estado }}</td>    
   </tr>
 </table>
 

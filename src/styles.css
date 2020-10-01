@@ -1,1 +1,149 @@
 /* You can add global styles to this file, and also import other style files */
+h1{
+    text-transform: uppercase;
+    font-size:18px;
+    text-align:center;
+}
+table{
+    margin:10px;
+}
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+tr > td{
+    padding:6px;
+    
+}
+.contenedor_busqueda{
+    text-align:center;
+    margin-bottom:10px;
+}
+/*
+
+*/
+.search_icon{
+    font-size:20px;
+}
+.search_input{
+    padding:7px;
+    border-radius:10px;
+    border:2px solid gray;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+    select{
+        width:60px;
+    }
+    
+    table {
+        width: 440px;
+    }
+    
+    table tr td {
+        width: 440px;
+        word-wrap: break-word;
+    }
+    
+    table tr td {
+        display: inline-block;
+        margin-top: 2px;
+    }
+    
+    table.table_dinamic {
+        width: 440px;
+    }
+    
+    table.table_dinamic tr.tr_dinamic td.td_dinamic {
+        width: 76px;
+        word-wrap: break-word;
+    }
+    
+    table.table_dinamic tr.tr_dinamic td.td_dinamic {
+        display: inline-block;
+        margin-top: 2px;
+    }
+    tr.tr_dinamic > td:nth-child(2){
+        width: 440px;
+    }
+    tr.tr_dinamic > td:nth-child(3){
+        width: 440px;
+    }
+    tr.tr_dinamic > td:nth-child(4){
+        width: 440px;
+    }
+    tr.tr_dinamic > td:nth-child(5){
+        width: 440px;
+    }
+    tr.tr_dinamic > td:nth-child(6){
+        width: 440px;
+    }
+    tr.tr_dinamic > td:nth-child(7){
+        width: 440px;
+    }
+    tr.tr_dinamic > td:nth-child(8){
+        width: 440px;
+    }
+    tr.tr_dinamic > td:nth-child(2):before{
+        content:"ID: ";
+    }
+    tr.tr_dinamic > td:nth-child(3):before{
+        content:"Asignar Status: ";
+    }
+    tr.tr_dinamic > td:nth-child(4):before{
+        content:"Status: ";
+    }
+    tr.tr_dinamic > td:nth-child(5):before{
+        content:"Fecha Cita: ";
+    }
+    tr.tr_dinamic > td:nth-child(6):before{
+        content:"";
+    }
+    tr.tr_dinamic > td:nth-child(7):before{
+        content:"No. Serie: ";
+    }
+    tr.tr_dinamic > td:nth-child(8):before{
+        content:"Modelo: ";
+    }
+    tr.tr_dinamic > td:nth-child(9):before{
+        content:"Año: ";
+    }
+    tr.tr_dinamic > td:nth-child(10):before{
+        content:"Último servicio: ";
+    }
+    tr.tr_dinamic > td:nth-child(11):before{
+        content:"Nombre: ";
+    }
+    tr.tr_dinamic > td:nth-child(12):before{
+        content:"Tel 1: ";
+    }
+    tr.tr_dinamic > td:nth-child(13):before{
+        content:"Tel 2: ";
+    }
+    tr.tr_dinamic > td:nth-child(14):before{
+        content:"Tel 3: ";
+    }
+    tr.tr_dinamic > td:nth-child(15):before{
+        content:"E-mail: ";
+    }
+    tr.tr_dinamic > td:nth-child(16):before{
+        content:"Status Cita: ";
+    }
+    tr.tr_dinamic > td:nth-child(17):before{
+        content:"Fecha Act.: ";
+    }
+    tr.tr_dinamic > td:nth-child(18):before{
+        content:"Hora Act.: ";
+    }
+    
+    
+    
+}

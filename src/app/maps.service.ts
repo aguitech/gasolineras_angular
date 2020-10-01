@@ -15,7 +15,7 @@ interface Location {
 export class MapsService {
   constructor(private http: HttpClient) {}
 
-  getLocations(buscar:'Any') {
+  getLocations(buscar:any) {
 
     const myheader = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
     let body = new HttpParams();

@@ -1,6 +1,11 @@
 import { Component } from "@angular/core";
 import { MapsService } from "./maps.service";
 
+interface CallbackLocations {
+  resultado: string;
+  params: string;
+  paramta: string;
+}
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -8,7 +13,7 @@ import { MapsService } from "./maps.service";
 })
 export class AppComponent {
   location: Object;
-  resultados: Object;
+  resultados: Object; 
 
   constructor(private map: MapsService) {}
 
@@ -16,6 +21,7 @@ export class AppComponent {
     this.map.getLocations("").subscribe((data) => {
       this.resultados = data.resultado;
     });
+
   }
   getLocations($event){
     const inputValue = $event.target.value;
