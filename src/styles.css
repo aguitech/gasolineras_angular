@@ -18,11 +18,10 @@ tr > td{
     text-align:center;
     margin-bottom:10px;
 }
-/*
 
-*/
 .search_icon{
     font-size:20px;
+    margin-left: 40px;
 }
 .search_input{
     padding:7px;
@@ -37,7 +36,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
-
+/*
+Responsive
+*/
 
 @media screen and (max-width:480px) {
     select{
